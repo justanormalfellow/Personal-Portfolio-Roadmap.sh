@@ -1,0 +1,274 @@
+header {
+    background-color: white;
+    border-bottom: 1px solid rgb(0, 0, 0);
+    border-top: 1px solid rgb(0, 0, 0);
+
+    position: fixed;
+    display: flex;
+    align-items: center;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 80px;
+
+    box-shadow: 0 0 25px 0 black;
+    
+}
+
+header * {
+    display: inline;
+    font-family: cursive;
+}
+
+header img {
+    width: auto;
+    height: 50px; 
+    object-fit: cover; /* Ensures the image doesn't distort */
+    }
+
+header nav {
+    margin: auto;
+}
+header li {
+    margin: 20px;
+}
+header li a {
+    color: black;
+    text-decoration: none;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: larger;
+}
+
+
+footer {
+    text-align: center;
+    width: 100%;
+
+    border-bottom: 1px solid rgb(0, 0, 0);
+    border-top: 1px solid rgb(0, 0, 0);
+
+    box-shadow: 0 0 25px 0 black;
+
+
+}
+
+footer > p {
+    font-family: cursive;
+    font-weight: 500;
+
+    font-size: medium;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    margin: 80px 0px 0px 0px; 
+    min-height: 100vh; 
+}
+
+main {
+    flex: 1;
+}
+
+table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+}
+  
+th {
+    font-family: cursive;
+    font-weight: 400;
+    text-align: left;
+
+    padding: 0px 0px 0px 10px;
+}
+td {
+    border-bottom: 1px solid #000000;
+    text-align: left;
+    padding: 8px;
+}
+
+.main-flex {
+    display: flex;
+    flex-direction: column;
+
+    margin: 0px 10px 0px 10px;
+}
+
+.pageTitle {
+    display: flex;
+    flex-direction: column;
+
+    align-items: center; 
+    margin-bottom: 100px; /* This Works for spacing */
+    
+}
+
+.pageTitle > h1 {
+    font-family: cursive;
+    font-size: 40px;
+}
+
+.pageTitle > p {
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: -12px;
+    color: grey;
+    font-weight: bold;
+}
+
+.pageTitle > hr {
+    width: 92%;
+    margin-top: 32px;
+}
+
+.mainpage {
+    display: flex;
+}
+
+.tableContent {
+    width: 33%;
+    border: 1px solid #000000;
+}
+
+.work-exp {
+    width: 33%;
+    border: solid #000000;
+    border-width: 1px 1px 1px 0px; /* Top, Right, Bottom, Left */
+}
+
+.work-exp a {
+    text-decoration: none;
+}
+
+#title-work {
+    font-family: cursive;
+    font-weight: 400;
+
+    padding: 0px 0px 20px 10px;
+}
+
+#workself {
+    font-family: cursive;
+    font-size: 14px;
+    font-weight: 400;
+
+    padding: 0px 0px 0px 10px;
+}
+
+.work-desc {
+    font-family: Arial, Helvetica, sans-serif;
+
+    padding: 0px 0px 0px 10px;
+}
+
+.education {
+    width: 33%;
+
+    padding: 0px 0px 0px 10px;
+    border: solid black;
+    border-width: 1px 1px 1px 0px;
+
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.education ul {
+    list-style-type: none;
+}
+
+.education li::marker {
+    content: "- "; /* Add custom dash as marker */
+}
+
+#edTitle {
+    font-family: cursive;
+    font-weight: 400;
+}
+
+#subtitle {
+    padding-bottom: 9px;
+}
+.project-title {
+    padding: 0px 0px 20px 20px;
+}
+
+.project-title h2 { 
+    font-family: cursive;
+    margin-top: 50px;
+}
+
+.project-title p {
+    font-family: arial;
+    color: grey;
+    font-weight: bold;
+}
+
+.project-main {
+    font-family: arial;
+    
+}
+
+.project-main a {
+    text-decoration: none;
+}
+
+.project-main hr {
+    width: 92%;
+}
+
+#p-padding {
+    padding-top: 70px;
+}
+
+.project-main p {
+    padding-left: 30px;
+}
+
+.main-article {
+    display: flex;
+    align-items: center;
+    align-content: center;
+    margin: auto;
+    
+    font-family: arial;
+    font-size: larger;
+    color: rgb(24, 23, 23);
+}
+
+.main-contact {
+    padding: 30px 0px 0px 20px;
+}
+
+.main-contact p {
+    font-family: arial;
+    color: grey;
+    font-weight: bold;
+
+    padding-bottom: 20px;
+}
+
+.main-contact h2 {
+    font-family: cursive;
+}
+
+.main-contact hr {
+    width: 92%;
+}
+
+.formClass {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.formClass input[type="text"],
+.formClass input[type="email"],
+.formClass textarea,
+.formClass input[type="submit"] {
+    margin: 10px 0;
+    width: 80%; 
+    max-width: 400px; 
+    padding: 10px; 
+    border-radius: 5px; 
+    border: 1px solid #000000;
+}
